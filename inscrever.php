@@ -42,6 +42,14 @@ $email       = $_POST['email'];
 $login       = $_POST['login'];
 $senha       = $_POST['senha'];
 
+#
+# Validar campos...
+#
+if (!$estado) {
+    echo "<center><h1>Faltou o campo 'estado'!</h1></center>";
+    exit();
+}
+
 $sql = mysql_query("INSERT INTO contato(nome, sobrenome, endereco, numero, complemento, bairro, cidade, estado, cep, telefone, rg, cpf, curso, checkbox, email, login, senha)
                                                   VALUES('$nome', '$sobrenome', '$endereco', '$numero', '$complemento', '$bairro', '$cidade', '$estado', '$cep', '$telefone', '$rg', '$cpf', '$curso', '$checkbox', '$email', '$login', '$senha')");
 echo "<center><h1>Sua inscrição foi realizada!</h1></center>";
