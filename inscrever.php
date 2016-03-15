@@ -7,15 +7,18 @@
 
 <body>
 <?php
+
 $servidor = "localhost";
-$banco = "my_banco";
-$usuario = "banco_contato";
-$senha = "";
-$link = mysql_connect($servidor, $usuario, $senha);
-$db = mysql_select_db($banco, $link);
+$banco    = "my_banco";
+$usuario  = "banco_contato";
+$senha    = "";
+$link     = mysql_connect($servidor, $usuario, $senha);
+$db       = mysql_select_db($banco, $link);
+
 if(!$link)
 {
-	echo "erro ao conectar ao banco de dados!";exit();
+	echo "erro ao conectar ao banco de dados!";
+    exit();
 }
 
 ?>
