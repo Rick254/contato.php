@@ -59,8 +59,8 @@ echo "<center><h1>Sua inscrição foi realizada!</h1></center>";
 <?php
 
 $MailToAddress = "contato@atelierilluminati.com.br"; 
-$redirectURL = "http://www.atelierilluminati.com.br/resposta.html"; 
-$MailSubject = "[Mensagem enviada pelo site]"; 
+$redirectURL   = "http://www.atelierilluminati.com.br/resposta.html"; 
+$MailSubject   = "[Mensagem enviada pelo site]"; 
 
 
 ?>
