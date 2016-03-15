@@ -22,23 +22,24 @@ if(!$link)
 ?>
 
 <?php
-$nome=$_POST['nome'];
-$sobrenome=$_POST['sobrenome'];
-$endereco=$_POST['endereco'];
-$numero=$_POST['numero'];
-$complemento=$_POST['complemento'];
-$bairro=$_POST['bairro'];
-$cidade=$_POST['cidade'];
-$estado=$_POST['estado'];
-$cep=$_POST['cep'];
-$telefone=$_POST['telefone'];
-$rg=$_POST['rg'];
-$cpf=$_POST['cpf'];
-$curso=$_POST['curso'];
-$checkbox=$_POST['checkbox'];
-$email=$_POST['email'];
-$login=$_POST['login'];
-$senha=$_POST['senha'];
+$nome        = $_POST['nome'];
+$sobrenome   = $_POST['sobrenome'];
+$endereco    = $_POST['endereco'];
+$numero      = $_POST['numero'];
+$complemento = $_POST['complemento'];
+$bairro      = $_POST['bairro'];
+$cidade      = $_POST['cidade'];
+$estado      = $_POST['estado'];
+$cep         = $_POST['cep'];
+$telefone    = $_POST['telefone'];
+$rg          = $_POST['rg'];
+$cpf         = $_POST['cpf'];
+$curso       = $_POST['curso'];
+$checkbox    = $_POST['checkbox'];
+$email       = $_POST['email'];
+$login       = $_POST['login'];
+$senha       = $_POST['senha'];
+
 $sql = mysql_query("INSERT INTO contato(nome, sobrenome, endereco, numero, complemento, bairro, cidade, estado, cep, telefone, rg, cpf, curso, checkbox, email, login, senha)
                                                   VALUES('$nome', '$sobrenome', '$endereco', '$numero', '$complemento', '$bairro', '$cidade', '$estado', '$cep', '$telefone', '$rg', '$cpf', '$curso', '$checkbox', '$email', '$login', '$senha')");
 echo "<center><h1>Sua inscrição foi realizada!</h1></center>";
