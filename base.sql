@@ -1,8 +1,4 @@
---
-
-No PhpMyAdmin clique em "exportar" e salve o resultado aqui.
-
----- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 4.3.8
 -- http://www.phpmyadmin.net
 --
