@@ -42,8 +42,10 @@ Campos marcados com * são obrigatórios.
 <br><br>
 <tr>
 <td><label>Nome*</label></td>
-<td><input type="text" maxlength="15" size="16" name="nome" autofocus required pattern="[A-Za-z]{9}"> 
-<label>Sobrenome*<input type="text" maxlength="15" size="16" name="sobrenome" required pattern="[A-Za-z]{16}"></label>
+<!-- <td><input type="text" maxlength="15" size="16" name="nome" autofocus required pattern="[A-Za-z]{9}">  -->
+<td><input type="text" maxlength="15" size="16" name="nome" autofocus > 
+<!-- <label>Sobrenome*<input type="text" maxlength="16" size="16" name="sobrenome" required pattern="[A-Za-z]{16}"></label> -->
+<label>Sobrenome*<input type="text" maxlength="16" size="16" name="sobrenome" ></label>
 </td>
 </tr>
 
@@ -67,7 +69,8 @@ Campos marcados com * são obrigatórios.
 <br><br>
 <tr>
 <td><label>Cidade</label></td>
-<td><input type="text" maxlength="20" size="25" name="cidade" pattern="[A-Za-z]{4}">
+<!-- <td><input type="text" maxlength="20" size="25" name="cidade" pattern="[A-Za-z]{4}"> -->
+<td><input type="text" maxlength="20" size="25" name="cidade" >
  <label> Estado<select name="estado" id="estado" class="select" required="required" >
 			<option selected="selected" value="-1">Selecione...</option>
 			<option value="AC">Acre</option>
@@ -106,20 +109,23 @@ Campos marcados com * são obrigatórios.
 <br><br>
 <tr>
 <td><label>CEP</label></td>
-<td><input type="text"  maxlength="10" size="10" name="cep" placeholder="xx.xxx-xxx" pattern="\d{5}-?\d{3}" required pattern="[0-9]+$"></td>
+<!-- <td><input type="text"  maxlength="10" size="10" name="cep" placeholder="xx.xxx-xxx" pattern="\d{5}-?\d{3}" required pattern="[0-9]+$"></td> -->
+<td><input type="text"  maxlength="10" size="10" name="cep" placeholder="xx.xxx-xxx" ></td>
 </tr>
 
 <br><br>
 <tr>
 <td><label>Telefone*</label> </td>
-<td><input type="tel" maxlength="15" size="13" name="telefone" placeholder="(xx)xxxxx-xxxx" required pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" pattern="[0-9]+$"></td>
+<!-- <td><input type="tel" maxlength="15" size="13" name="telefone" placeholder="(xx)xxxxx-xxxx" required pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" pattern="[0-9]+$"></td> -->
+<td><input type="tel" maxlength="15" size="13" name="telefone" placeholder="(xx)xxxxx-xxxx" ></td>
 </tr>
 
 <br><br>
 <tr>
 <td><label>RG*</label></td>
 <td><input type="text" maxlength="14" size="14" name="rg" required="required" > <label>CPF*</label>
-<input type="text" maxlength="11" size="14" name="cpf" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" required pattern="[0-9]+$"; required="required" >
+<!-- <input type="text" maxlength="11" size="14" name="cpf" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" required pattern="[0-9]+$"; required="required" > -->
+<input type="text" maxlength="11" size="14" name="cpf" id="cpf" >
 </td>
 </tr>
 <br>
@@ -154,7 +160,8 @@ Campos marcados com * são obrigatórios.
 <br><br>
 <tr>
 <td><label>E-mail*</label></td>
-<td><input type="email" name="email" size="25" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Digite seu e-mail." required="required" />
+<!-- <td><input type="email" name="email" size="25" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Digite seu e-mail." required="required" /> -->
+<td><input type="email" name="email" size="25" title="Digite seu e-mail." />
 </td>
 </tr>
 
