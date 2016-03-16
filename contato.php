@@ -181,8 +181,8 @@ Campos marcados com * são obrigatórios.
 <section id="botao">
 <br>
 <tr>
-<center><td><input type="reset" name="APAGAR" size="50" value="Limpar" class="botao" id="botao" onclick="apagar()" ></td>
-<td><input type="submit"  size="50"  class="botao" id="botao" onclick="inscrever()" ></td></center>
+<center><td><input type="reset" name="APAGAR" size="50" value="Limpar" class="botao" id="botao" onclick="//apagar()" ></td>
+<td><input type="submit"  size="50"  class="botao" id="botao" onclick="//inscrever()" ></td></center>
 </tr>
 </section>
 
