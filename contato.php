@@ -151,7 +151,7 @@ Campos marcados com * são obrigatórios.
 <tr>
 <td></td>
 <td><label>Clique aqui para aceitar os termos e condições dos cursos.</label>
-<input type="checkbox" name="checkbox" value="valor" size="8" required="required" ></td>
+<input type="checkbox" name="termos-aceito" value="sim" size="8" required="required" ></td>
 </tr>
 </section>
 

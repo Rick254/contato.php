@@ -20,7 +20,7 @@ $telefone    = $_POST['telefone'];
 $rg          = $_POST['rg'];
 $cpf         = $_POST['cpf'];
 $curso       = $_POST['curso'];
-$checkbox    = $_POST['checkbox'];
+$checkbox    = $_POST['termos-aceito'];
 $email       = $_POST['email'];
 $login       = $_POST['login'];
 $senha       = $_POST['senha'];
@@ -42,6 +42,11 @@ echo "<center><h1>Sua inscrição foi realizada!</h1></center>";
 $MailToAddress = "contato@atelierilluminati.com.br"; 
 $redirectURL   = "http://www.atelierilluminati.com.br/resposta.html"; 
 $MailSubject   = "[Mensagem enviada pelo site]"; 
+
+#
+# Para você enviar email utilize a funçõa mail()
+# http://php.net/manual/pt_BR/function.mail.php
+#
 
 ?>
 
