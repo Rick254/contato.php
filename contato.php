@@ -182,7 +182,7 @@ Campos marcados com * são obrigatórios.
 <br>
 <tr>
 <center><td><input type="reset" name="APAGAR" size="50" value="Limpar" class="botao" id="botao" onclick="apagar()" ></td>
-<td><input type="submit" name="INSCREVER" size="50" value="Inscrever"  class="botao" id="botao" onclick="inscrever()" ></td></center>
+<td><input type="submit"  size="50"  class="botao" id="botao" onclick="inscrever()" ></td></center>
 </tr>
 </section>
 
