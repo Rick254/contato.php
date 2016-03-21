@@ -1,0 +1,147 @@
+<html lang='pt-br'>
+<head>
+<link rel='icon' href='favicon.png'/>
+<meta http-equiv='content-type' content='text/html' charset='UTF-8' />
+<title>Atelier Illuminati</title>
+</head>
+<body>
+<?php
+$nome              = $_POST['nome'];
+$sobrenome     = $_POST['sobrenome'];
+$endereco         = $_POST['endereco'];
+$numero           = $_POST['numero'];
+$complemento  = $_POST['complemento'];
+$bairro              = $_POST['bairro'];
+$cidade             = $_POST['cidade'];
+$estado             = $_POST['estado'];
+$cep                  = $_POST['cep'];
+$ddd                 = $_POST['ddd'];
+$telefone          = $_POST['telefone'];
+$rg                    = $_POST['rg'];
+$cpf                   = $_POST['cpf'];
+$curso               = $_POST['curso'];
+$checkbox         = $_POST['termos-aceito'];
+$email                = $_POST['email'];
+$login                 = $_POST['login'];
+$senha                = $_POST['senha'];
+
+if(!$nome) {
+	echo '<center><h1>Faltou o campo "nome"</h1></center>';
+	exit();
+}
+
+if(!$sobrenome) {
+	echo '<center><h1>Faltou o campo "sobrenome"</h1></center>';
+	exit();
+}
+
+if(!$ddd) {
+	echo '<center><h1>Faltou o campo "ddd"</h1></center>';
+	exit();
+}
+
+if(!$telefone) {
+	echo '<center><h1>Faltou o campo "telefone"</h1></center>';
+	exit();
+}
+
+if(!$rg) {
+	echo '<center><h1>Faltou o campo "rg"</h1></center>';
+	exit();
+}
+
+if(!$cpf) {
+	echo '<center><h1>Faltou o campo "cpf"</h1></center>';
+	exit();
+}
+
+if(!$curso) {
+	echo '<center><h1>Faltou o campo "curso"</h1></center>';
+	exit();
+}
+
+if(!$checkbox) {
+	echo '<center><h1>Faltou o campo "checkbox"</h1></center>';
+	exit();
+}
+
+if(!$email) {
+	echo '<center><h1>Faltou o campo "E-mail"</h1></center>';
+	exit();
+}
+
+if(!$login) {
+	echo '<center><h1>Faltou o campo "login"</h1></center>';
+	exit();
+}
+
+if(!$senha) {
+	echo '<center><h1>Faltou o campo "senha"</h1></center>';
+	exit();
+}
+
+require"model.php";
+echo "<br><br><br><br><br><pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center><h3><font style='color:#104478; font-family:helvetica; text-shadow: 0.1em 0.1em 0.2em #104478;' >Seu Cadastro foi realizado.<br>
+<br> Agora vá até a página de Pagamento para confirmar sua inscrição definitiva no curso!</font></h3></center></pre>";
+
+
+ //Define Para quem vai ser enviado o email 
+$para = 'atelierilluminati@atelierilluminati.com.br';
+//resgata os dados digitados no formulário e grava nas variaveis
+$nome = $_POST['nome'];
+$sobrenome = $_POST['sobrenome'];
+$cidade = $_POST['cidade'];
+$ddd = $_POST['ddd'];
+$telefone = $_POST['telefone'];
+$cpf = $_POST['cpf'];
+$curso = $_POST['curso'];
+$email = $_POST['email'];
+//define a mensagem que vai ser enviada no e-mail
+$mensagem = '<strong>Nome: </strong>'.$nome;
+$mensagem = '<strong>sobrenome: </strong>'.$sobrenome;
+$mensagem .= '<br> <strong>cidade:   </strong>'.$_POST['cidade'];
+$mensagem .= '<br> <strong>ddd:   </strong>'.$_POST['ddd'];
+$mensagem .= '<br> <strong>telefone :   </strong>'.$_POST['telefone'];
+$mensagem .= '<br> <strong>cpf:   </strong>'.$_POST['cpf'];
+$mensagem .= '<br> <strong>curso:   </strong>'.$_POST['curso'];
+$mensagem .= '<br> <strong>email:   </strong>'.$_POST['email'];
+$mensagem .= '<br> <strong>telefone:   </strong>'.$_POST['telefone'];
+
+// codificações.
+$headers = 'Content-Type:text/html; charset=UTF-8\n';
+$headers .= 'From: atelierilluminati.com.br <atelierilluminati@atelierilluminati.com.br>\n';//Vai ser //mostrado que o email partiu deste email e seguido do nome
+$headers .= 'X-Sender: <atelierilluminati@atelierilluminati.com.br>\n';//email do servidor //que enviou
+$headers .= 'X-Mailer: PHP v'.phpversion().'\n';
+$headers .= 'X-IP: '.$_SERVER['REMOTE_ADDR'].'\n';
+$headers .= 'Return-Path: <atelierilluminati@atelierilluminati.com.br>\n'; //caso a msg //seja respondida vai para este email.
+$headers .= 'MIME-Version: 1.0\n';
+mail($para, $nome, $sobrenome, $cidade, $ddd, $telefone, $cpf, $curso, $email, $headers); //função que faz o envio do email.
+
+
+
+?>
+</body>
+</html>
